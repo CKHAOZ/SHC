@@ -15,7 +15,7 @@ GO
 
 CREATE TABLE [dbo].[Country](
 	[idCountry] [int] IDENTITY(1,1) NOT NULL,
-	[Name] [varchar](50) NOT NULL
+	[CouName] [varchar](50) NOT NULL
 ) ON [PRIMARY]
 
 GO

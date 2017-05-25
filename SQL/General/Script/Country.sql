@@ -1,7 +1,7 @@
 USE [SHC]
 GO
 
-/****** Object:  Table [dbo].[Country]    Script Date: 24/05/2017 3:55:45 p.m. ******/
+/****** Object:  Table [dbo].[Country]    Script Date: 25/05/2017 4:00:23 p.m. ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,12 +9,13 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Country](
-	[idCountry] [int] IDENTITY(1,1) NOT NULL,
+	[idCou] [int] IDENTITY(1,1) NOT NULL,
 	[CouName] [varchar](128) NOT NULL,
 	[CouCode] [varchar](12) NOT NULL,
  CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED 
 (
-	[idCountry] ASC
+	[idCou] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+

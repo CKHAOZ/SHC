@@ -1,7 +1,7 @@
 USE [SHC]
 GO
 
-/****** Object:  Table [dbo].[City]    Script Date: 25/05/2017 4:00:40 p.m. ******/
+/****** Object:  Table [dbo].[City]    Script Date: 25/05/2017 4:58:57 p.m. ******/
 SET ANSI_NULLS ON
 GO
 
@@ -11,8 +11,8 @@ GO
 CREATE TABLE [dbo].[City](
 	[idCit] [int] IDENTITY(1,1) NOT NULL,
 	[idDep] [int] NOT NULL,
-	[CitName] [varchar](120) NOT NULL,
-	[CitCode] [varchar](12) NOT NULL,
+	[citName] [varchar](120) NOT NULL,
+	[citCode] [varchar](12) NOT NULL,
  CONSTRAINT [PK_City] PRIMARY KEY CLUSTERED 
 (
 	[idCit] ASC

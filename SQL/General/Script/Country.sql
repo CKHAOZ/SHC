@@ -1,7 +1,7 @@
 USE [SHC]
 GO
 
-/****** Object:  Table [dbo].[Country]    Script Date: 25/05/2017 4:00:23 p.m. ******/
+/****** Object:  Table [dbo].[Country]    Script Date: 25/05/2017 4:59:10 p.m. ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,8 +10,8 @@ GO
 
 CREATE TABLE [dbo].[Country](
 	[idCou] [int] IDENTITY(1,1) NOT NULL,
-	[CouName] [varchar](128) NOT NULL,
-	[CouCode] [varchar](12) NOT NULL,
+	[couName] [varchar](128) NOT NULL,
+	[couCode] [varchar](12) NOT NULL,
  CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED 
 (
 	[idCou] ASC

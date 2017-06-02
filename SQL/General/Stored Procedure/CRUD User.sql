@@ -1,3 +1,6 @@
+USE [SHC]
+GO
+/****** Object:  StoredProcedure [dbo].[SP_CRUD_USERCONDAI]    Script Date: 2/06/2017 4:15:23 p.m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -7,13 +10,13 @@ GO
 -- Create date: 30/05/2017
 -- Description:	Crud User 
 -- =============================================
-CREATE PROCEDURE SP_CRUD_USERCONDAI
-	@idUsu int null,
-	@usuFirstName varchar(64) null,
-	@usuLastName varchar(64) null,
-	@usuUserName varchar(50) null,
-	@usuPassword varchar(50) null,
-	@usuActive bit null,
+ALTER PROCEDURE [dbo].[SP_CRUD_USERCONDAI]
+	@idUsu int = null,
+	@usuFirstName varchar(64) = null,
+	@usuLastName varchar(64) = null,
+	@usuUserName varchar(50) = null,
+	@usuPassword varchar(50) = null,
+	@usuActive bit = null,
 	@usuAction varchar(1)
 AS
 BEGIN
@@ -56,4 +59,3 @@ BEGIN
 	ELSE IF (@usuAction in('u', 'd'))
 		SELECT @idUsu;
 END
-GO
